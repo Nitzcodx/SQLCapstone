@@ -57,11 +57,25 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Requirements" />
+    <Folder Include="Tables" />
+    <Folder Include="Stored Procedures" />
+    <Folder Include="Functions" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Requirements\Users.txt" />
     <None Include="Requirements\TheatreDetails.txt" />
     <None Include="Requirements\ShowDetails.txt" />
     <None Include="Requirements\BookingDetails.txt" />
+    <None Include="InsertionScript.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Users.sql" />
+    <Build Include="Tables\TheatreDetails.sql" />
+    <Build Include="Tables\ShowDetails.sql" />
+    <Build Include="Tables\BookingDetails.sql" />
+    <Build Include="Stored Procedures\usp_BookTheTicket.sql" />
+    <Build Include="Functions\ufn_GenerateBookingId.sql" />
+    <Build Include="Functions\ufn_GetMovieShowtimes.sql" />
+    <Build Include="Functions\ufn_BookedDetails.sql" />
   </ItemGroup>
 </Project>
